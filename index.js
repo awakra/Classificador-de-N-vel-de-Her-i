@@ -1,5 +1,5 @@
 let nome = "Django";
-let xp = 1000;
+let xp = 0;
 let rank;
 
 while (xp <= 11000) {
