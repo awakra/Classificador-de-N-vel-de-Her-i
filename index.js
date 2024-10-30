@@ -1,35 +1,27 @@
-let nome = "Django";
+let name = "Django";
 let xp = 0;
 let rank;
 
 while (xp <= 11000) {
   if (xp <= 1000) {
-    rank = "Ferro";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
-  } else if (xp >= 1001 && xp <= 2000) {
+    rank = "Iron";
+  } else if (xp <= 2000) {
     rank = "Bronze";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
-  } else if (xp >= 2001 && xp <= 5000) {
-    rank = "Prata";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
-  } else if (xp >= 5001 && xp <= 7000) {
-    rank = "Ouro";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
-  } else if (xp >= 7001 && xp <= 8000) {
-    rank = "Platina";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
-  } else if (xp >= 8001 && xp <= 9000) {
-    rank = "Ascendente";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
-  } else if (xp >= 9001 && xp <= 10000) {
-    rank = "Imortal";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
+  } else if (xp <= 5000) {
+    rank = "Silver";
+  } else if (xp <= 7000) {
+    rank = "Gold";
+  } else if (xp <= 8000) {
+    rank = "Platinum";
+  } else if (xp <= 9000) {
+    rank = "Ascendant";
+  } else if (xp <= 10000) {
+    rank = "Immortal";
   } else {
-    rank = "Radiante";
-    console.log(`O Herói de nome ${nome} está no nível de ${rank}`);
+    rank = "Radiant";
   }
-  console.log(
-    `Esta verificação foi executada com a variável xp equivalente a ${xp}`
-  );
+
+  console.log(`The Hero named ${name} is at the ${rank} level`);
+  console.log(`This check was executed with xp equal to ${xp}`);
   xp += 500;
 }
